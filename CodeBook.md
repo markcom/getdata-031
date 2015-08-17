@@ -4,7 +4,8 @@
  - activity: String description of the activity
 
 ### Means of the measurements
-#### over time (floating point numbers)
+Values (floating point numbers) contain the means over subject and activity over time
+
 | Parameter                    | Description                                         | Axis |
 | ---------------------------- | --------------------------------------------------- | ---- |
 | tBodyAccelerationMeanX       | Body acceleration mean                              | X    |
@@ -52,6 +53,7 @@
 
 ### Means of the measurements
 #### Fast Fourier Transform applied (floating point numbers)
+Values (floating point numbers) contain the means of Fast Fourier Transforms over data collected per subject and activity
 
 | Parameter                                 | Description                                         | Axis |
 | ----------------------------------------- | --------------------------------------------------- | ---- |
