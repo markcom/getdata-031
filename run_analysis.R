@@ -41,10 +41,9 @@ names(dataX) <- data_features$V2
 
 #   Put the features we want to keep (everything containing "std",
 #   "mean") to a new table and sort them
-#   The BodyBoby values are duplicates to Body.. -> remove them
 featuresToKeep <- grep("mean", names(dataX))
 featuresToKeep <- c(featuresToKeep, grep("std", names(dataX)))
-featuresToKeep <-  c(featuresToKeep, -grep("fBodyBody", names(dataX)))
+#featuresToKeep <-  c(featuresToKeep, -grep("fBodyBody", names(dataX)))
 
 dataX <- dataX[, featuresToKeep]
 
@@ -56,8 +55,6 @@ names(dataX) <- gsub("mean", "Mean", names(dataX))
 names(dataX) <- gsub("-", "", names(dataX))
 names(dataX) <- gsub("\\(\\)", "", names(dataX))
 
-
-#   Replace Actity number with name
 #   Replace Actity number with name
 dataY$V1[dataY$V1 == "1"] <- "WALKING"
 dataY$V1[dataY$V1 == "2"] <- "WALKING_UPSTAIRS"
@@ -82,6 +79,3 @@ resultDF <- resultDF[order(resultDF$subject), ]
 
 #   Save the results Dataframe to a file "result.txt"
 write.table(resultDF, "result.txt", row.name=FALSE)
-
-
-
