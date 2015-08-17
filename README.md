@@ -35,7 +35,8 @@ Used variables / data:
   - dataSubjectTrain: contains the subject for Train
   - dataSubject: dataSubjectTest merged with dataSubjectTrain
   - resultDF: means calculated for dataX stored in a dataframe
-  
+
+
   - currentDir: Actual directory
   - dataDir: root directory of the UCI HAR Dataset
   - featuresToKeep: vector of columns, which are to be kept
