@@ -4,8 +4,8 @@ This repo was created for the Coursera [Getting and Cleaning Data](https://www.c
 
 It contains 4 files:
   - [README.md](https://www.coursera.org/course/getdata) : Basic description of the assignement and the run_analysis.R script
-  - [run_analysis.R](https://www.coursera.org/course/getdata) : The R script used to generate the tidy data set
-  - [result.txt](https://www.coursera.org/course/getdata) : The tidy data set itself
+  - [run_analysis.R](hhttps://github.com/markcom/getdata-031/blob/master/run_analysis.R) : The R script used to generate the tidy data set
+  - [result.txt](https://github.com/markcom/getdata-031/blob/master/result.txt) : The tidy data set itself
   - [Codebook](https://github.com/markcom/getdata-031/blob/master/CodeBook) : Description of the data set
 
 
