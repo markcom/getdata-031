@@ -6,7 +6,7 @@ It contains 4 files:
   - [README.md](https://www.coursera.org/course/getdata) : Basic description of the assignement and the run_analysis.R script
   - [run_analysis.R](https://www.coursera.org/course/getdata) : The R script used to generate the tidy data set
   - [result.txt](https://www.coursera.org/course/getdata) : The tidy data set itself
-  - [Codebook](https://www.coursera.org/course/getdata) : Description of the data set
+  - [Codebook](https://github.com/markcom/getdata-031/blob/master/CodeBook) : Description of the data set
 
 
 ### Description of the run_analysis.R script
