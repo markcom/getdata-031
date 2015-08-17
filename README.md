@@ -23,7 +23,7 @@ Prerequisites: the UCI HAR Dataset is available in the Workspace. Alternatively,
   - Mean calculated for the dataX (grouped by subject & activity) and stored in a new tidy dataframe resultDF
   - resultDF saved to a "result.txt"
 
-Used variables / data:
+Used data frames:
   - data_features: contains all the feature names
   - dataXTrain: Training data
   - dataXTest: Test data
@@ -36,7 +36,7 @@ Used variables / data:
   - dataSubject: dataSubjectTest merged with dataSubjectTrain
   - resultDF: means calculated for dataX stored in a dataframe
 
-
+Used variables:
   - currentDir: Actual directory
   - dataDir: root directory of the UCI HAR Dataset
   - featuresToKeep: vector of columns, which are to be kept
