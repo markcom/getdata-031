@@ -16,7 +16,7 @@ Prerequisites: the UCI HAR Dataset is available in the Workspace. Alternatively,
   - Initially all data required for the analysis are read to the memory using the read.table function
   - All Test and Training data are merged (dataX, dataSubject, dataY)
   - The column names of the dataX data frame are modified according to the features - renamed, removed all but "std" & "mean"
-  - The column names of the dataX data frame further changed to "nicer" names
+  - The column names of the dataX data frame further changed to be "nicer"
   - activity number in dataY replaced by activity name
   - activities(dataY) merged with the dataX and renamed
   - subject(dataSubject) merged with the dataX and renamed
