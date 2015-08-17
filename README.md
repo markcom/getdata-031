@@ -14,24 +14,29 @@ It contains 4 files:
 Prerequisites: the UCI HAR Dataset is available in the Workspace. Alternatively, it can be downloaded and unzipped using the script from lines 5-9 (uncommented).
 
   - Initially all data required for the analysis are read to the memory using the read.table function
-  - The data frame data_features contains all features (column names). Because only the variables containing Std and Mean are needed, copy them (V1 - the column number, V2 - variable name) to a new data frame - featuresToKeep
-  - The feature names in featuresToKeep are modified to be a bit more user friendly
-  - Next we remove all non-required columns from dataXTest/Train
-  - DataYTrain + Test are modified, so instead of activity number an activity description is used
-  - The activity column (dataYTrain / Test) is added to the dataXTest/Train and renamed to "activity"
-  - The subject column (dataSubjectTest / Train) is added to the dataXTest/Train and renamed to "subject"
-  - The dataXTrain is merged with dataYTrain into dataX and sorted
-  - All the means are computed and stored in a new data frame resultDF (grouped by subject and activity)
-  - The results are stored to a file "result.txt"
+  - All Test and Training data are merged (dataX, dataSubject, dataY)
+  - The column names of the dataX data frame are modified according to the features - renamed, removed all but "std" & "mean"
+  - The column names of the dataX data frame further changed to "nicer" names
+  - activity number in dataY replaced by activity name
+  - activities(dataY) merged with the dataX and renamed
+  - subject(dataSubject) merged with the dataX and renamed
+  - Mean calculated for the dataX (grouped by subject & activity) and stored in a new tidy dataframe resultDF
+  - resultDF saved to a "result.txt"
 
-Used variables:
-  - data_features: contains the feature names
-  - featuresToKeep: only the required features
+Used variables / data:
+  - data_features: contains all the feature names
   - dataXTrain: Training data
   - dataXTest: Test data
+  - dataX: dataXTest merged with dataXTrain
   - dataYTest: activity description for the Test
   - dataYTrain: activity description for the Train
+  - dataY: dataYTest merged with dataYTrain
   - dataSubjectTest: contains the subject for Test
   - dataSubjectTrain: contains the subject for Train
-  - dataX: dataframe containing joined data (X,Y/Train/Test, subject)
-  - resultDF: means calculated for dataX
+  - dataSubject: dataSubjectTest merged with dataSubjectTrain
+  - resultDF: means calculated for dataX stored in a dataframe
+  - 
+  - currentDir: Actual directory
+  - dataDir: root directory of the UCI HAR Dataset
+  - featuresToKeep: vector of columns, which are to be kept
+  
